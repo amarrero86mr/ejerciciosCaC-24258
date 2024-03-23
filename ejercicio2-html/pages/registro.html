@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a href="../index.html" style="text-decoration: none; color: crimson;"><h1>CaC 🎬 MOVIES</h1></a>
+        
+        <nav>
+            <ul type="none" align="right">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="tendencias.html">Tendencias</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="login.html">Iniciar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+    <section>
+        <div>
+            <h2 align="center">Registrate</h2>
+        </div>
+        <form action="" method="get">
+            <fieldset>
+                <legend>Datos de contacto y login</legend>
+                <div>
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" name="username" id="username" required>
+                </div>
+                <div>
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" name="email" id="email" required>
+                </div>
+                <div>
+                    <label for="pass">Contreseña:</label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Datos personales</legend>
+                <div>
+                    <label for="name">Nombre:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="lastname">Apellido:</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                    <div>
+                        <legend>Direccion:</legend>
+                        <label for="street">Calle:</label>
+                        <input type="text" name="street" id="street" required>
+                        <label for="streetnumber">Altura:</label>
+                        <input type="number" name="streetnumber" id="streetnumber" required>
+                        <label for="city">Ciudad:</label>
+                        <input type="text" name="city" id="city" required>
+                        <label for="location">Localidad:</label>
+                        <input type="text" name="location" id="location" required>
+                        <label for="contry">Pais:</label>
+                        <select name="contry" id="contry">
+                            <option value="argentina">Argentina</option>
+                            <option value="brasil">Brasil</option>
+                            <option value="chile">Chile</option>
+                            <option value="colombia">Colombia</option>
+                            <option value="ecuador">Ecuador</option>
+                            <option value="paraguay">Paraguay</option>
+                            <option value="peru">Perú</option>
+                            <option value="uruguay">Uruguay</option>
+                        </select>
+                        <label for="postal">Código Postal:</label>
+                        <input type="number" name="postal" id="postal" required>
+                    </div>
+                </div>
+            </fieldset>
+            <input type="checkbox" name="accept" id="accept" required>
+            <label for="accept">Acepto los <a href="#">términos y condiciones</a></label>
+
+                <div>
+                    <input type="submit" id="name" value="REGISTARSE">
+                    <input type="reset" id="name" value="BORRAR">
+                    
+                </div>
+        </form>
+    </section>
+    </main>
+    <footer>
+        <a href="#">Términos y condiciones</a>
+        <a href="#">Preguntas frecuentes</a>
+        <a href="#">Ayuda</a>
+        <a href="#">Administrador de películas</a>
+        <p align="center">© 2024 - CaC Movies</p>
+    </footer>
+</body>
+</html>
