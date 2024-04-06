@@ -44,11 +44,18 @@
                 </fieldset>
                 <fieldset>
                     <legend>Datos personales</legend>
-                    <div>
-                        <label for="name">Nombre:</label>
-                        <input type="text" name="name" id="name" required>
-                        <label for="lastname">Apellido:</label>
-                        <input type="text" name="lastname" id="lastname" required>
+                        <div>
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name" required>
+                            <label for="lastname">Apellido:</label>
+                            <input type="text" name="lastname" id="lastname" required>
+                        </div>
+                        <div>
+                            <label for="gender">Género: </label>
+                            <label for="femenino"><input type="radio" name="gender" value="femenino" id="gender">Femenino</label>
+                            <label for="gender"><input type="radio" name="gender" value="masculino" id="gender">Masculino</label>
+                            <label for="gender"><input type="radio" name="gender" value="otro" id="gender">Otro</label>
+                        </div>
                         <div>
                             <legend>Direccion:</legend>
                             <label for="street">Calle:</label>
@@ -73,7 +80,7 @@
                             <label for="postal">Código Postal:</label>
                             <input type="number" name="postal" id="postal" required>
                         </div>
-                    </div>
+                    
                 </fieldset>
                 <input type="checkbox" name="accept" id="accept" required>
                 <label for="accept">Acepto los <a href="#">términos y condiciones</a></label>
