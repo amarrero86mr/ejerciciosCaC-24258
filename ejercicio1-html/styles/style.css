@@ -6,13 +6,17 @@ body{
     font-family: 'ubuntu';
 }
 
+header{
+    background-color: rgb(54, 10, 10);
+    color: rgb(244, 70, 70);
+}
+
 .navbar{
-    height: 175px;
+    height: 150px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('../img/cocinar.jpg');
 }
 
 .navbar > h2{
@@ -21,6 +25,7 @@ body{
 }
 
 .navbar-link     {
+    
     width: 500px;
     display: flex;
     flex-wrap: wrap ;
@@ -30,7 +35,36 @@ body{
 .navbar-link-a {
     font-size: 25px;
     font-weight: 500;
-    color: black;  
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: rgb(244, 70, 70);
+    color: rgb(54, 10, 10);  
 }
 
+h1 {
+    margin: 20px;
+    text-align: center;
 
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 150px;
+    background-color: rgb(54, 10, 10);
+    color: rgb(128, 202, 242);
+}
+
+.footer__redes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+
+.footer__redes>li>a>img {
+    width: 35px;
+}
