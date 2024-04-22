@@ -1,0 +1,75 @@
+/* flexbox y mediaqueris */
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+header {
+    background-color: cornflowerblue;
+    height: 10vh;
+    display: flex;
+    justify-content: center; /*horizontal - al eje de flex*/
+    align-items: center; /* vertical - al eje de flex*/
+}
+
+main{
+    height: 70vh;
+}
+
+footer {
+    background-color: darksalmon;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex; /*activa el modo de cajas flexibles*/
+    flex-direction: row; /*row es el valor por defecto, peor lo ponemos para control*/
+    flex-wrap: nowrap; /* wrap es el valor por defecto, rompe la formacion si no hay espacio alineando una formacion multilinea */
+    justify-content: space-around; /* espacio al rededor de los hijos distibuidos equitativamente a cada uno*/
+    align-items: center;
+    height: 100%;
+    background-image: linear-gradient(cornflowerblue, darksalmon);
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(97, 67, 55, 0.839);
+    background-color: rgba(231, 78, 78, 0.469);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item{ 
+    width: 25%;
+    height: 25%;
+}
+
+/* media queris */
+@media only screen and (max-width: 600px) {
+    .container {
+        flex-direction: column; /*Cambiamos la dirección de los elementos a columna*/
+        background-color: lightseagreen;
+    }
+
+    .item {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px){
+    .container {
+
+        background-color: lightgrey;
+    }
+
+    .item {
+        width: 100px;
+        height: 100px;
+    }
+}

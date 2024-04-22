@@ -1,0 +1,138 @@
+/* clas Grid Css */
+/* estilos de recet */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* selectores */
+.container {
+    max-width: 980px;
+    padding: 0;
+    margin: 0 auto;
+
+    display: grid; /* activamos el modo grilla*/ 
+    grid-template-columns: repeat(6, 1fr); /* cantidad de columnas y sus dimenciones*/
+    grid-template-rows: 10vh 75vh 10vh;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.main {
+    display: grid;
+    margin: 0 auto;
+    /*division en columnas*/
+    grid-template-columns: repeat(6, 1fr);
+    /*cuantas columnas ocupa el padre?*/
+    grid-column-start:1;
+    grid-column-end:7;/*-1 tambien hace referencia al último*/
+    gap: 10px;/*valor del gap*/
+}
+
+.aside {
+    /*cuantas columnas del padre va a ocupar*/
+    grid-column-start:1;
+    grid-column-end: 3; /*el numero corresponde al gap que limita la columna*/
+    background-color: aqua;
+    padding: 10px;
+}
+.aside h2{
+    font-size: 1.5rem;
+}
+.aside ul li {list-style: none;}
+.aside ul li a{
+    text-decoration: none;
+    
+    color: #aa0014;
+}
+.aside ul li a:hover{
+    text-decoration: underline;
+}
+
+.section { 
+    grid-column-start: 3;
+    grid-column-end: 7;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+/*HEADER/FOOTER*/
+.nav, .nav ul{
+    /*predisponemos a los padres a comportamiento de grillas*/
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+    /*cuantas columnas ocupamos*/
+    grid-column-start: 1;
+    grid-column-end: 7;
+    /*valor de los vacios o gap*/
+    gap: 10px;
+    /*geometria*/
+    padding: 0;
+    margin: 0;
+    background-color: #333;    
+}  
+
+.nav ul li a{
+    color: beige;
+    text-decoration: none;
+}
+.nav ul li{
+    list-style: none;
+    /*predisponemos a li a comportamiento flexible*/
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /*alineamientos*/
+    justify-content: center;
+    align-items: center;
+}
+/*pseudoselector :nth-child() first-child*/
+.footer ul li:nth-child(1){
+    grid-column: 2;
+}
+
+.header ul li:nth-child(1){
+    grid-column: 4;
+}
+
+/*MENU DESPLEGABLE*/
+.header ul li .dropdown-content{
+    /*Personalizamos la posicion de drop...*/
+    position: absolute;
+
+    /*ubicamos la caja drop*/
+    top:10vh;
+    right: 0;
+
+/*Ubicamos el contenido de drop en columna*/
+    display: flex;
+    flex-direction: column;
+    
+    /*predisponemos a drop a una transicion*/
+    transition: all 0.5s ease-out;
+    
+    opacity: 0;
+}
+
+.header ul{
+    position: relative;
+}
+
+.header ul li:hover .dropdown-content{
+
+    opacity: 1;
+
+}
+
+/*estilos al menu desplegable*/
+.header ul li .dropdown-content li{
+    padding: 20px 40px;
+    transition: all 0.3s;
+}
+
+.header ul li .dropdown-content li:hover{
+    background-color: #575757;
+}
