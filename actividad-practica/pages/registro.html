@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 <body>
     <header>
@@ -23,101 +23,97 @@
     </header>
 
     <main>
-        <section>
+        <div>
+            <h2>Registrate</h2>
+        </div>
+        <form action="" method="get">
+            <fieldset class="fieldset__contacto">
+                <legend>Datos de contacto y login</legend>
+                <div>
+                    <label for="username">Nombre de Usuario:</label>
+                    <input type="text" name="username" id="username" required>
+                
+                    <label for="email">Correo Electronico:</label>
+                    <input type="email" name="email" id="email" required>
+                
+                    <label for="pass">Contreseña:</label>
+                    <input type="password" name="pass" id="pass" required>
+                
+                    <label for="pass">Repita la contreseña:</label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset__personales">
+                <legend>Datos personales</legend>
+                <div>
+                    <label for="name">Nombres:</label>
+                    <input type="text" name="name" id="name" required>
+                    <label for="lastname">Apellidos:</label>
+                    <input type="text" name="lastname" id="lastname" required>
+                </div>
+                <div>
+                    <label for="gender">Género: </label>
+                    <label class="label-input" for="femenino"><input type="radio" name="gender" value="femenino" id="gender">Femenino</label>
+                    <label class="label-input" for="gender"><input type="radio" name="gender" value="masculino" id="gender">Masculino</label>
+                    <label class="label-input" for="gender"><input type="radio" name="gender" value="otro" id="gender">Otro</label>
+                </div>
+                <div>
+                    <label for="estudios">Estudios</label>
+                    <input type="checkbox" name="estudios" id="estudios" value="primario">primario
+                    <input type="checkbox" name="estudios" id="estudios" value="secundario">secundario
+                    <input type="checkbox" name="estudios" id="estudios" value="terciario">terciario
+                    <input type="checkbox" name="estudios" id="estudios" value="universitario">universitario
+                    <input type="checkbox" name="estudios" id="estudios" value="otro">otro
+                </div>
+            </fieldset>
+            <fieldset class="fieldset__direccion">
+                <legend>Dirección:</legend>
+                <div>
+                    <label for="street">Calle:</label>
+                    <input type="text" name="street" id="street" required>
+                    <label for="streetnumber">Altura:</label>
+                    <input type="number" name="streetnumber" id="streetnumber" required>
+                    <label for="city">Ciudad:</label>
+                    <input type="text" name="city" id="city" required>
+                    <label for="location">Localidad:</label>
+                    <input type="text" name="location" id="location" required>
+                    <label for="contry">Pais:</label>
+                    <select name="contry" id="contry">
+                        <option value="argentina">Argentina</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Perú</option>
+                        <option value="uruguay">Uruguay</option>
+                    </select>
+                    <label for="postal">Código Postal:</label>
+                    <input type="number" name="postal" id="postal" required>
+                </div>
+            </fieldset>
             <div>
-                <h2 align="center">Registrate</h2>
+                <label class="label-input" for="accept"><input type="checkbox" name="accept" id="accept" required>Acepto los <a href="#"> Términos y Condiciones</a></label>
             </div>
-            <form action="" method="get">
-                <fieldset>
-                    <legend>Datos de contacto y login</legend>
-                    <div>
-                        <label for="username">Nombre de Usuario:</label>
-                        <input type="text" name="username" id="username" required>
-                    </div>
-                    <div>
-                        <label for="email">Correo Electronico:</label>
-                        <input type="email" name="email" id="email" required>
-                    </div>
-                    <div>
-                        <label for="pass">Contreseña:</label>
-                        <input type="password" name="pass" id="pass" required>
-                    </div>
-                    <div>
-                        <label for="pass">Repita la contreseña:</label>
-                        <input type="password" name="pass" id="pass" required>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Datos personales</legend>
-                        <div>
-                            <label for="name">Nombre:</label>
-                            <input type="text" name="name" id="name" required>
-                            <label for="lastname">Apellido:</label>
-                            <input type="text" name="lastname" id="lastname" required>
-                        </div>
-                        <div>
-                            <label for="gender">Género: </label>
-                            <label for="femenino"><input type="radio" name="gender" value="femenino" id="gender">Femenino</label>
-                            <label for="gender"><input type="radio" name="gender" value="masculino" id="gender">Masculino</label>
-                            <label for="gender"><input type="radio" name="gender" value="otro" id="gender">Otro</label>
-                            <div>
-                                <label for="estudios">Estudios</label>
-                                <input type="checkbox" name="estudios" id="estudios" value="primario">primario
-                                <input type="checkbox" name="estudios" id="estudios" value="secundario">secundario
-                                <input type="checkbox" name="estudios" id="estudios" value="terciario">terciario
-                                <input type="checkbox" name="estudios" id="estudios" value="universitario">universitario
-                                <input type="checkbox" name="estudios" id="estudios" value="otro">otro
-                            </div>
-                        </div>
-                        <div>
-                            <legend>Direccion:</legend>
-                            <label for="street">Calle:</label>
-                            <input type="text" name="street" id="street" required>
-                            <label for="streetnumber">Altura:</label>
-                            <input type="number" name="streetnumber" id="streetnumber" required>
-                            <label for="city">Ciudad:</label>
-                            <input type="text" name="city" id="city" required>
-                            <label for="location">Localidad:</label>
-                            <input type="text" name="location" id="location" required>
-                            <label for="contry">Pais:</label>
-                            <select name="contry" id="contry">
-                                <option value="argentina">Argentina</option>
-                                <option value="brasil">Brasil</option>
-                                <option value="chile">Chile</option>
-                                <option value="colombia">Colombia</option>
-                                <option value="ecuador">Ecuador</option>
-                                <option value="paraguay">Paraguay</option>
-                                <option value="peru">Perú</option>
-                                <option value="uruguay">Uruguay</option>
-                            </select>
-                            <label for="postal">Código Postal:</label>
-                            <input type="number" name="postal" id="postal" required>
-                        </div>
-                    
-                </fieldset>
-                <input type="checkbox" name="accept" id="accept" required>
-                <label for="accept">Acepto los <a href="#">términos y condiciones</a></label>
-    
-                    <div>
-                        <input type="submit" id="name" value="REGISTARSE">
-                        <input type="reset" id="name" value="BORRAR">
-                        
-                    </div>
-            </form>
-        </section>
-        </main>
-        <footer>
-                <ul class="footer__redes">
-                    <li><a href="#"><img src="../img/icons/icons8-facebook-nuevo-50.png" alt="enlace a nuestro facebook"></a></li>
-                    <li><a href="#"><img src="../img/icons/icons8-instagram-50.png" alt="enlace a nuestro instagram"></a></li>
-                    <li><a href="../pages/contacto.html"><img src="../img/icons/icons8-nuevo-post-50.png" alt="enlace a contacto"></a></li>
-                    <li><a href="#"><img src="../img/icons/icons8-whatsapp-50.png" alt="enlace a nuestro whatsapp"></a></li>
-                    <li><a href="#"><img src="../img/icons/icons8-youtube-play-50.png" alt="enlace a nuestro canal de youtube"></a></li>
-                </ul>
-            
-            <div>
-                <p align="center">Derechos recervados ©2024</p>
+            <div class="div__btn">
+                <input type="submit" id="registrar" value="REGISTARSE">
+                <input type="reset" id="borrar" value="BORRAR">
+                
             </div>
-        </footer>
+        </form>
+    </main>
+    <footer>
+            <ul class="footer__redes">
+                <li><a href="#"><img src="../img/icons/icons8-facebook-nuevo-50.png" alt="enlace a nuestro facebook"></a></li>
+                <li><a href="#"><img src="../img/icons/icons8-instagram-50.png" alt="enlace a nuestro instagram"></a></li>
+                <li><a href="../pages/contacto.html"><img src="../img/icons/icons8-nuevo-post-50.png" alt="enlace a contacto"></a></li>
+                <li><a href="#"><img src="../img/icons/icons8-whatsapp-50.png" alt="enlace a nuestro whatsapp"></a></li>
+                <li><a href="#"><img src="../img/icons/icons8-youtube-play-50.png" alt="enlace a nuestro canal de youtube"></a></li>
+            </ul>
+        
+        <div>
+            <p align="center">Derechos recervados ©2024</p>
+        </div>
+    </footer>
 </body>
 </html>

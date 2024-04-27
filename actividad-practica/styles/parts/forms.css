@@ -1,0 +1,150 @@
+h2 {
+    text-align: center;
+    font-size: 2vw;
+    margin: 1vw;
+}
+
+form {
+    max-width: 90%;
+    margin: 1vw auto;
+    border-radius: 2vw;
+    background-color: rgb(215, 187, 187);
+    padding: 2vw;
+}
+
+legend {
+    font-size: 1.7vw;
+    font-weight: 400;
+}
+
+fieldset {
+    border: solid 2px rgb(250, 185, 185);
+    border-radius: 2vw;
+}
+.fieldset__contacto>div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row: repeat (2, 1fr);
+    align-items: center;
+}
+.fieldset__contacto>div>label{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: end;
+}
+.fieldset__contacto>div>input{
+    grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.fieldset__personales>div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-row: repeat (2, 1fr);
+    align-items: center;
+}
+.fieldset__personales>div>label{
+    grid-column:span 1;
+    
+}
+.fieldset__personales>div>input{
+    grid-column: span 2;
+}
+.fieldset__personales>div>#estudios{
+    grid-column: span 1/3;
+}
+.fieldset__personales>div{
+    margin-top: 2vw;
+}
+
+.fieldset__direccion>div {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+}
+.fieldset__direccion>div>label{
+    grid-column: span 1;
+}
+.fieldset__direccion>div>input{
+    grid-column: span 1;
+}
+.fieldset__direccion>div>select{
+    grid-column: span 1;
+}
+
+label {
+    height: 1.7vw;
+    margin: 0.5vw;
+    margin-left: 3vw;
+}
+
+
+input {
+    height: 2vw;
+    margin: 0.5vw;
+    padding: 0.2vw 0.7vw;   
+    border-radius: 0.5vw;
+}
+select {
+    height: 2vw;
+    margin: 0.5vw;
+    padding: 0.2vw 0.7vw;   
+    border-radius: 0.5vw;
+}
+#accept, input[type=checkbox] {
+    appearance: none;
+    background-color: white;
+    width: 2vw;
+    border-radius: 0.5vw;
+    border: solid 1px rgb(54, 10, 10);
+}
+
+#accept:checked, input[type=checkbox]:checked {
+    background-color: rgb(244, 70, 70);
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+}
+
+input[type=radio] {
+    appearance: none;
+    background-color: white;
+    width: 2vw;
+    border-radius: 2vw;
+    outline: solid 1px rgb(54, 10, 10);
+    border: solid 5px white;
+}
+
+input[type=radio]:checked {
+    outline: solid 2px rgb(54, 10, 10);
+    border: solid 5px white;
+    background-color: rgb(244, 70, 70);
+}
+.label-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.div__btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.div__btn>input {
+    height: 2.5vw;
+    width: 10vw;
+    font-weight: 900;
+    font-size: 1vw;
+    color: rgb(54, 10, 10);
+    border: solid 2px rgb(54, 10, 10);
+
+}
+
+#registrar:hover {
+    background-color: rgb(78, 147, 49);
+}
+#borrar:hover {
+    background-color: rgb(173, 1, 1);
+}

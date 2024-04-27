@@ -63,6 +63,15 @@ footer {
     gap: 10px;
 }
 
-.footer__redes>li>a>img {
+.footer__redes>li {
     width: 35px;
+    margin: 10px;
+}
+.footer__redes>li>a>img{
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.footer__redes>li>a>img:hover {
+    background-color:  rgb(244, 70, 70);
 }
