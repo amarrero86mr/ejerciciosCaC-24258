@@ -1,0 +1,27 @@
+.hero {
+    height: 150px;
+    padding: 2vw;
+    background-image: url(/actividad-practica/img/cocinar.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0 0 0 2000px rgba(125, 90, 63, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero>h1 {
+    
+    text-align: center;
+    font-size: 3em;
+}
+.hero>h2 {
+    padding: 2vw;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.hero>p {
+    font-size: 1.8em;
+    text-align: start;
+}
