@@ -8,18 +8,29 @@
 </head>
 <body>
     <header>
-        <section class="navbar">
-            <nav>
-                <ul class="navbar-link">
-                    <li><a class="navbar-link-a" href="../index.html">Home</a></li>
-                    <li><a class="navbar-link-a" href="../pages/nosotros.html">Nosotros</a></li>
-                    <!-- agregar Iframes de ubicacion y formulario a la futura pagina de contactos  -->
-                    <li><a class="navbar-link-a" href="../pages/contacto.html">Contacto</a></li>
-                    <li><a class="navbar-link-a" href="../pages/recetario.html">Recetario</a></li>
-                </ul>
-            </nav>
-            <h2>La Cocina de Juan</h2>
-        </section>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="./index.html">La Cocina de Juan</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/recetario.html">Recetario</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
     
     <main>
@@ -103,19 +114,41 @@
 
     </main>
     <aside></aside>
-    <footer>
-        <!-- agregar favicom de redes -->
-            <ul class="footer__redes">
-                <li><a href="#"><img src="../img/icons/icons8-facebook-nuevo-50.png" alt="enlace a nuestro facebook"></a></li>
-                <li><a href="#"><img src="../img/icons/icons8-instagram-50.png" alt="enlace a nuestro instagram"></a></li>
-                <li><a href="../pages/contacto.html"><img src="../img/icons/icons8-nuevo-post-50.png" alt="enlace a contacto"></a></li>
-                <li><a href="#"><img src="../img/icons/icons8-whatsapp-50.png" alt="enlace a nuestro whatsapp"></a></li>
-                <li><a href="#"><img src="../img/icons/icons8-youtube-play-50.png" alt="enlace a nuestro canal de youtube"></a></li>
+    <footer class="navbar navbar-expand-lg">
+        <div class="container-xxl footer">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./img/icons/icons8-facebook-nuevo-50.png"
+                            alt="enlace a nuestro facebook" /></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./img/icons/icons8-instagram-50.png"
+                            alt="enlace a nuestro instagram" /></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contacto.html"><img src="./img/icons/icons8-nuevo-post-50.png"
+                            alt="enlace a contacto" /></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./img/icons/icons8-whatsapp-50.png"
+                            alt="enlace a nuestro whatsapp" /></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><img src="./img/icons/icons8-youtube-play-50.png"
+                            alt="enlace a nuestro canal de youtube" /></a>
+                </li>
             </ul>
-        
-        <div>
-            <p align="center">Derechos recervados ©2024</p>
+
+            <div class="derechos">
+                <p>Derechos recervados ©2024</p>
+            </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 </body>
 </html>
