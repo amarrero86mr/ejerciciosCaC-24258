@@ -1,3 +1,7 @@
+.navbar {
+    background-color: rgb(255, 173, 105);
+}
+
 .navbar-brand,.nav-link{
     margin: 10px;
     padding: 5px;
@@ -13,6 +17,13 @@
     box-shadow: 0 0 0 0 white,
     1px 1px 3px 3px rgba(250, 58, 58, 0.594);
 }
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+
 
 /* header{
     background-color: rgb(54, 10, 10);
