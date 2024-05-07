@@ -5,7 +5,7 @@ h2 {
 }
 
 form {
-    max-width: 90%;
+    max-width: 100%;
     margin: 1vw auto;
     border-radius: 2vw;
     background-color: rgb(215, 187, 187);
@@ -91,6 +91,18 @@ select {
     padding: 0.2vw 0.7vw;   
     border-radius: 0.5vw;
 }
+
+.from_textarea{
+    display: flex;
+    justify-content: start;
+    gap: 1vw;
+}
+textarea {
+    margin: 0.5vw;
+    padding: 0.2vw 0.7vw;   
+    border-radius: 0.5vw;
+}
+
 #accept, input[type=checkbox] {
     appearance: none;
     background-color: white;
