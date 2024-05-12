@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Tabla de Equipos</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+            <h1>Tabla de Equipos de Fútbol</h1>
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <form id="nuevo-equipo">
+                        <div class="form-group">
+                            <label for="equipo">Equipo</label>
+                            <input type="text" class="form-control" id="equipo" />
+                        </div>
+                        <div class="form-group">
+                            <label for="puntos">Puntos</label>
+                            <input type="text" class="form-control" id="puntos" />
+                        </div>
+                        <div class="form-group">
+                            <label for="goles">Goles</label>
+                            <input type="text" class="form-control" id="goles" />
+                        </div>
+                        <br>
+                        <input type="submit" value="Añadir Equipo" />
+                        <input type="hidden" id="equipoIndex" value="-1" />
+                        <!-- Añade un campo oculto para almacenar el índice del equipo en edición -->
+                        <button id="guardar-cambios" style="display:none;">Guardar Cambios</button>
+                        <!-- Nuevo botón de "Guardar Cambios" -->
+
+                    </form>
+                </div>
+                <!-- div de la derecha -->
+                <div class="col-sm-6">
+                    <div id="tabla-clasificacion">
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Equipos</th>
+                                    <th>Puntos</th>
+                                    <th>Goles</th>
+                                    <th> </th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody id="equipos-tabla">
+                                <!-- Esto se va a generar con JavaScript -->
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <button id="mostrar-tabla">Mostrar Tabla</button>
+
+                    <button id="ocultar-tabla">Ocultar Tabla</button>
+
+                </div>
+            </div>
+        </div>
+        <script src="./js/cargarTabla.js"></script>
+        <footer>
+            <p>© 2024 Tabla de Equipos de Fútbol</p>
+        </footer>
+    </body>
+
+</html>
