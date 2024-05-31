@@ -14,5 +14,15 @@
 // console.log(cad.indexOf('a', 14)); // devielve -1 //busca el caracter 'a' desde la posicion 14
 // console.log(cad.lastIndexOf('o', 7)); // devuelve 6 //busca el caracter '0' desde la posicion 7 de atras para adelante
 
-fc = ((x) => x +100);
-console.log(fc(10));
+// fc = ((x) => x +100);
+// console.log(fc(10));
+
+console.log('inicio');
+let suma=0;
+for (let i = 0; i < 1000000; i++) {
+    suma = +i;
+    
+};
+
+console.log(suma)
+console.log('fin del proceso')

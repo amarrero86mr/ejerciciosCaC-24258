@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NOSOTROS | tradicion criolla</title>
+        <link rel="stylesheet" href="./recet.css">
+        <link rel="stylesheet" href="./registro.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="../imgs/icons/favicon-32x32.png">
+    </head>
+
+    <body class="container">
+        
+
+        <main>
+            <section class="hero">
+                <h1 class="hero__title">REGISTRO</h1>
+                <p>Registrate y fomá parte de la familia de tradicion criolla</p>
+            </section>
+            <section>
+                <h2 class="hero__title title__secondary">Datos de Contacto</h2>
+                <!-- faltan los patterns t los requiereds -->
+                <!-- <form action="https://formspree.io/f/xrgndeyq" method="POST"> -->
+                    <!-- https://formsubmit.co/amarrero86mr@gmail.com -->
+                <form action="" method="" id="form" class="form__registro">
+                    <!-- <fieldset class="form_primerseccion"> -->
+                        <div class="form__name">
+                            <input type="text" name="nombre" id="nombre" placeholder="Nombres">
+                        </div>
+                        <div class="form__apellido">
+                            <input type="text" name="apellido" id="apellido" placeholder="Apellidos">
+                        </div>
+                        <div class="form__tipodocumento">
+                            <select name="tipo_documento" id="tipo_documento-select">
+                                <option value="" selected="" disabled="">Tipo de Documento</option>
+                                <option value="DNI">D.N.I.</option>
+                                <option value="CI">C.I</option>
+                                <option value="CUIL">CUIL</option>
+                                <option value="CUIT">CUIT</option>
+                            </select>
+                        </div>
+                        <div class="Form__documento">
+                            <input type="text" name="n_documento" id="n_documento" placeholder="Nº de Documento">
+                        </div>
+                        <div class="form__Genero">
+                            <label>Genero:</label>
+                            <input type="radio" name="genero" id="genero_otro" value="otro" checked>
+                            <label for="genero_otro">Otro</label>
+                            <input type="radio" name="genero" id="genero_femenino" value="femenino">
+                            <label for="genero_femenino">Femenino</label>
+                            <input type="radio" name="genero" id="genero_masculino" value="masculino">
+                            <label for="genero_masculino">Masculino</label>
+                        </div>
+                        <div class="form__provincia">
+                            <select name="provincia" id="provincia-select">
+                                <option value="" selected="" disabled="">Provincia</option>
+                                <option value="buens_aires">Buenos Aires</option>
+                                <option value="caba">C.A.B.A.</option>
+                                <option value="catamarca">Catamarca</option>
+                                <option value="chaco">Chaco</option>
+                                <option value="chubut">Chubut</option>
+                                <option value="cordoba">Córdoba</option>
+                                <option value="corrientes">Corrientes</option>
+                                <option value="entre_rios">Entre Ríos</option>
+                                <option value="formosa">Formosa</option>
+                                <option value="jujuy">Jujuy</option>
+                                <option value="la_pampa">La Pampa</option>
+                                <option value="la_rioja">La Rioja</option>
+                                <option value="mendoza">Mendoza</option>
+                                <option value="misiones">Misiones</option>
+                                <option value="nuequen">Neuquén</option>
+                                <option value="rio_negro">Río Negro</option>
+                                <option value="salta">Salta</option>
+                                <option value="san_juan">San Juan</option>
+                                <option value="san_luis">San Luis</option>
+                                <option value="santa_cruz">Santa Cruz</option>
+                                <option value="santa_fe">Santa Fe</option>
+                                <option value="santiago_del_estero">Santiago del Estero</option>
+                                <option value="tierra_del_fuego">Tierra del Fuego</option>
+                                <option value="tucuman">Tucumán</option>
+                            </select>
+                        </div>
+                        <div class="form_ciudad">
+                            <input type="text" name="ciudad" id="ciudad-localidad" placeholder="Ciudad/Localidad">
+                        </div>
+                        <div class="form__calle">
+                            <input type="text" name="calle" id="calle" placeholder="Calle">
+                        </div>
+                        <div class="form__altura">
+                            <input type="number" min="0" name="altura" id="altura" placeholder="Altura">
+                        </div>
+                        <div class="form__depto">
+                            <input type="text" name="depto" id="depto" placeholder="Piso/Departamento">
+                        </div>
+                        <div class="form__cpostal">
+                            <input type="number" name="cpostal" id="cpostal" min="1" placeholder="Código Postal">
+                        </div>
+                    <!-- </fieldset> -->
+                    <!-- <fieldset class="form_segundaseccion"> -->
+                        <div class="form__telefono">
+                            <input type="text" name="telefono" id="telefono" placeholder="Teléfono">
+                        </div>
+
+                        <div class="form__email">
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                        </div>
+                        <div class="form__repit-email">
+                            <input type="email" name="re_email" id="re_email" placeholder="Repita su E-mail">
+                        </div>
+
+                        <div class="form__pass">
+                            <input type="password" name="pass" id="pass" placeholder="Contraseña">
+                        </div>
+                        <div class="form__repit-pass">
+                            <input type="password" name="re_pass" id="re_pass" placeholder="Repita su Contraseña">
+                        </div>
+
+                        <div class="form__acept">
+                            <input type="checkbox" id="acept_terminos">
+                            <label for="acept_terminos">ACEPTO LOS <a href="#">TERMINOS Y CONDICIONES</a></label>
+                        </div>
+                        <p class="warnings" id="warnings"></p>
+                        <div class="button__section">
+                            <button class="button_send" type="submit">REGISTRARSE</button>
+                            
+                            <button class="button_borrar" type="reset">BORRAR</button>
+                        </div>
+                    <!-- </fieldset> -->
+                </form>
+            </section>
+        </main>
+
+    </body>
+    <script src="./validacion.js"></script>
+
+</html>
